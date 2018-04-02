@@ -67,7 +67,6 @@ public class Monopoly implements Game {
     private int calculatePosition(int oldPosition, int roll) {
         int total = oldPosition + roll;
         if (total >= fields.size()) {
-            System.out.println("Total is larger. Total = " + total);
             return total - fields.size();
         } else {
             return total;
